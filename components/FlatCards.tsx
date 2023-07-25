@@ -5,13 +5,13 @@ import React from 'react';
 export default function FlatCards() {
   return (
     <View>
-      <Text style={styles.headingText}>FlatCards</Text>
+      <Text style={styles.headingText}>Flat Cards</Text>
       <View style={styles.container}>
         <View style={[styles.redBox, styles.box]}>
           <Text>Red</Text>
         </View>
-        <View style={[styles.blueBox, styles.box]}>
-          <Text>Blue</Text>
+        <View style={[styles.yellowBox, styles.box]}>
+          <Text>Yellow</Text>
         </View>
         <View style={[styles.greenBox, styles.box]}>
           <Text>Green</Text>
@@ -31,10 +31,9 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
-    justifyContent: 'space-evenly',
-    marginVertical:10,
-    paddingHorizontal:10
+    justifyContent: 'space-around',
+    marginVertical: 10,
+    paddingHorizontal: 10,
   },
   box: {
     display: 'flex',
@@ -44,12 +43,12 @@ const styles = StyleSheet.create({
     width: 100,
   },
   redBox: {
-    backgroundColor: 'red',
+    backgroundColor: '#CB4335',
   },
-  blueBox: {
-    backgroundColor: 'blue',
+  yellowBox: {
+    backgroundColor: '#F4D03F',
   },
   greenBox: {
-    backgroundColor: 'green',
+    backgroundColor: '#28B463',
   },
 });
