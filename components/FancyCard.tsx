@@ -41,8 +41,9 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     marginVertical: 12,
     marginHorizontal: 16,
-    borderTopLeftRadius: 20,
-    borderBottomRightRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomLeftRadius: 20,
+    paddingBottom:2,
   },
   cardElevated: {
     backgroundColor: '#f5f5f5',
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
   cardImage: {
     height: 180,
     marginBottom: 8,
-    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
 
   },
   cardBody: {
